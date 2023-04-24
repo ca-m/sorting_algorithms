@@ -5,7 +5,6 @@
  * @a: first integer to swap
  * @b: second integer to swap
  */
-
 void swap_ints(int *a, int *b)
 {
 	int tmp;
@@ -21,7 +20,6 @@ void swap_ints(int *a, int *b)
  * @size: size of the array
  * Description: prints array after each swap
  */
-
 void bubble_sort(int *array, size_t  size)
 {
 	size_t i, len = size;

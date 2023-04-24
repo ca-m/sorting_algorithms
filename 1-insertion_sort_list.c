@@ -6,12 +6,11 @@
  * @n1: pointer to first node to swap
  * @n2: second node to swap
  */
-
 void swap_nodes(listint_t **h, listint_t **n1, listint_t *n2)
 {
 	(*n1)->next = n2->next;
 	if (n2->next != NULL)
-		2->next->prev = *n1;
+		n2->next->prev = *n1;
 	n2->prev = (*n1)->prev;
 	n2->next = *n1;
 	if ((*n1)->prev != NULL)
@@ -40,6 +39,7 @@ void insertion_sort_list(listint_t **list)
 	{
 		tmp = iter->next;
 		insert = iter->prev;
+
 		while (insert != NULL && iter->n < insert->n)
 		{
 			swap_nodes(list, &insert, iter);
